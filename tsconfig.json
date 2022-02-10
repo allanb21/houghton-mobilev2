@@ -1,0 +1,34 @@
+{
+	"compileOnSave": false,
+	"compilerOptions": {
+		"target": "es6",
+		"moduleResolution": "node",
+		"removeComments": true,
+		"pretty": true,
+		"newLine": "LF",
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"sourceMap": true,
+		"skipLibCheck": true,
+		"allowJs": true,
+		"jsx": "preserve",
+		"lib": ["es6", "dom"],
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"strictNullChecks": true
+	},
+	"include": [
+		"src/**/*",
+		"src/**/**/*"
+	],
+	"exclude": [
+		"hooks",
+		"platforms",
+		"plugins",
+		"node_modules",
+		"**/*.spec.ts",
+		"www"
+	]
+}

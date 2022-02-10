@@ -1,0 +1,57 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "plugins": ["@typescript-eslint"],
+    "ignorePatterns": ["webpack.config.js", "/src/**/*.js", "/src/**/*.jsx", "/src/*.js", "/src/*.jsx", "/src/**/**/*.js", "/src/**/**/**/*.js", "/src/**/**/*.jsx", "/src/**/**/**/*.jsx"],
+    "rules": {
+      "comma-dangle": ["error", "never"],
+      "semi": ["error", "never"],
+      "quotes": [2, "single"],
+      "valid-jsdoc": "off",
+      "require-jsdoc": "error",
+      "no-trailing-spaces": "error",
+      "curly": 2,
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "no-case-declarations": "error",
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": ["off"],
+      "space-before-function-paren": ["error", {
+          "anonymous": "always",
+          "named": "never",
+          "asyncArrow": "never"
+      }],
+      "@typescript-eslint/ban-types": "off",
+      "indent": ["error", 4, { "SwitchCase": 1 }],
+      "no-loop-func": "error",
+      "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
+      "@typescript-eslint/member-delimiter-style": [
+          "warn",
+          {
+              "multiline": {
+                  "delimiter": "semi",
+                  "requireLast": false
+              },
+              "singleline": {
+                  "delimiter": "semi",
+                  "requireLast": false
+              },
+              "overrides": {
+                "interface": {
+                    "multiline": {
+                        "delimiter": "none",
+                        "requireLast": false
+                    }
+                }
+            }
+          }
+      ],
+      "@typescript-eslint/ban-ts-comment": "off"
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended"
+    ]
+}
